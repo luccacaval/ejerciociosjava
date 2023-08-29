@@ -11,12 +11,11 @@ public class ej3 {
     }
 
     public static void main(String[] args) {
-        int num = 4;
-        while (num < 100 && !es_primo(num)){
-            try (Scanner scn = new Scanner(System.in)) {
-                num = scn.nextInt();
-            }
-            
-        }
+    	int num;
+    	Scanner sc = new Scanner(System.in);
+    	do {
+    	    	num = sc.nextInt();	
+    	} while (num < 100 && !es_primo(num));
+    	sc.close();
     }
 }
